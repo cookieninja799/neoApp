@@ -17,3 +17,11 @@ First, clone the repository and install dependencies:
 git clone <repository-url>
 cd <project-directory>
 npm install
+```
+
+Then, run the development server:
+
+```bash
+npm run dev
+
+
