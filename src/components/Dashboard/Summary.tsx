@@ -1,4 +1,5 @@
 import React from 'react';
+
 interface NEO {
   id: string;
   name: string;
@@ -8,32 +9,33 @@ interface NEO {
       kilometers: string;
     };
   }>;
-  estimated_diameter?: {  // Make this property optional
+  estimated_diameter?: {
     meters: {
       estimated_diameter_min: number;
       estimated_diameter_max: number;
     };
   };
 }
-  
 
 interface SummaryProps {
   neos: NEO[];
 }
-  
 
 const Summary: React.FC<SummaryProps> = ({ neos }) => {
   const totalNeos = neos.length;
 
   const hazardousNeos = neos.filter(neo => neo.is_potentially_hazardous_asteroid).length;
 
-  const closestNeo = neos.reduce((closest: NEO, currentNeo: NEO) => {
+  const closestNeo = neos.reduce((closest, currentNeo) => {
+    if (!currentNeo.close_approach_data[0] || !closest?.close_approach_data[0]) return closest;
     const currentDistance = parseFloat(currentNeo.close_approach_data[0].miss_distance.kilometers);
     const closestDistance = parseFloat(closest.close_approach_data[0].miss_distance.kilometers);
     return currentDistance < closestDistance ? currentNeo : closest;
-  }, neos[0]);
+  }, neos[0] || null);
 
-  const closestNeoDistance = `${parseFloat(closestNeo.close_approach_data[0].miss_distance.kilometers).toLocaleString()} km`;
+  const closestNeoDistance = closestNeo
+    ? `${parseFloat(closestNeo.close_approach_data[0]?.miss_distance.kilometers).toLocaleString()} km`
+    : 'N/A';
 
   return (
     <div className="summary-container p-4 my-4 bg-gray-200 rounded-lg shadow">
