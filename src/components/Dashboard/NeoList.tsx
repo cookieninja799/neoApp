@@ -32,7 +32,7 @@ const NEOList: React.FC<NEOListProps> = ({ neos }) => {
 
   return (
     <div className="neo-list-container my-4 p-4 bg-gray-100 rounded-lg shadow">
-      <h3 className="text-lg font-bold text-center mb-3">Today's Near Earth Objects</h3>
+      <h3 className="text-lg font-bold text-center mb-3">Todays Near Earth Objects</h3>
       <ul>
         {neos.map((neo) => (
           <li key={neo.id} className={`p-3 my-2 rounded-lg ${neo.is_potentially_hazardous_asteroid ? 'bg-red-200' : 'bg-green-200'}`}>
