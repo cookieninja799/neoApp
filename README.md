@@ -19,7 +19,10 @@ The NEO Tracker is a web application built with Next.js, designed to provide rea
 
 The application features a 3D interactive globe powered by the React-globe.gl library, offering users a unique perspective on NEOs' paths relative to Earth. Users can interact with the globe to explore NEO trajectories, enhancing the understanding of their orbits and potential close approaches.
 
-### Accurate Ephemeris Data with Horizons API
+![image](https://github.com/cookieninja799/neoApp/assets/52760166/b5ee1791-177e-40b7-ad3f-251f6674d83a)
+
+
+### Accurate Ephemeris Data with Horizons API (COMING SOON)
 
 We utilize NASA's Horizons system via its API to fetch accurate ephemeris data for NEOs, ensuring the reliability of the information presented. This integration allows the NEO Tracker to display precise orbital paths and close approach details for each object.
 
