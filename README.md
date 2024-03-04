@@ -10,6 +10,9 @@ The NEO Tracker is a web application built with Next.js, designed to provide rea
 - **Data Visualization**: Visual representations of NEO data, making it easier to understand their characteristics and potential impact.
 - **Responsive Design**: Access the NEO Tracker on any device, with a responsive layout optimized for both desktop and mobile.
 
+![image](https://github.com/cookieninja799/neoApp/assets/52760166/4e46afcd-6db9-401e-a6e9-1244ebc97ff1)
+
+
 ## Integration of React-globe.gl and Horizons API
 
 ### 3D Globe Visualization
