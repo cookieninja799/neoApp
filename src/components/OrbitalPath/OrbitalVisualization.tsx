@@ -99,7 +99,7 @@ const MyGlobe: React.FC = () => {
   }, []); // Empty dependency array ensures this runs once on mount
 
   return (
-    <div ref={globeContainerRef} className="container my-4 p-4 bg-gray-100 rounded-lg shadow w-1/2 h-96">
+    <div ref={globeContainerRef} className="container my-4 p-4 bg-gray-100 rounded-lg shadow h-96">
       <h2 className="text-lg font-bold text-center mb-2">Orbital Vis</h2>
       <Globe
         width={dimensions.width}

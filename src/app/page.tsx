@@ -9,6 +9,7 @@ export default function Page() {
       <main className="flex flex-col items-center justify-center">
         <Dashboard/>
         <MyGlobe/>
+        <footer/>
       </main>
     </Layout>
   );
