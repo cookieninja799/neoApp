@@ -28,7 +28,7 @@ To run the NEO Tracker locally, follow these steps:
 
     ```bash
     git clone https://github.com/cookieninja799/neoApp
-    cd neo-tracker
+    cd neoApp
     ```
 
 2. **Install dependencies**
