@@ -74,6 +74,13 @@ To run the NEO Tracker locally, follow these steps:
 
     Visit [http://localhost:3000](http://localhost:3000) to view the application.
 
+## Roadmap
+
+The development of the NEO Tracker is an ongoing process. Here's a glimpse into what we have planned for future releases:
+
+- **Horizons API Integration**: Enhance the accuracy of NEO data by integrating NASA's Horizons system for precise ephemeris calculations.
+- **Educational Resources**: Develop a library of educational content to help users learn more about NEOs, space science, and the importance of planetary defense.
+
 ## Contributing
 
 Contributions are welcome! Whether it's submitting an issue, proposing a feature, or submitting a pull request, all contributions are appreciated.
