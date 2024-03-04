@@ -27,7 +27,7 @@ To run the NEO Tracker locally, follow these steps:
 1. **Clone the repository**
 
     ```bash
-    git clone https://github.com/yourusername/neo-tracker.git
+    git clone https://github.com/cookieninja799/neoApp
     cd neo-tracker
     ```
 
@@ -77,7 +77,7 @@ Contributions are welcome! Whether it's submitting an issue, proposing a feature
 - [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
 - [NASA API](https://api.nasa.gov/) - Explore the APIs provided by NASA, including the NEO Web Service.
 - [React-globe.gl Documentation](https://github.com/vasturiano/react-globe.gl) - Discover how to create stunning 3D globe visualizations with React.
-- [Horizons API Documentation](https://ssd.jpl.nasa.gov/?horizons_doc) - Learn more about the Horizons system and how to access precise ephemeris data for celestial objects.
+- [Horizons API Documentation](https://ssd-api.jpl.nasa.gov/doc/horizons.html) - Learn more about the Horizons system and how to access precise ephemeris data for celestial objects.
 
 ## Deploying Your Project
 
