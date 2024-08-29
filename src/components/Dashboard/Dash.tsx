@@ -40,7 +40,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const apiKey = process.env.NASA_API_KEY;
+        const apiKey = process.env.NEXT_PUBLIC_NASA_API_KEY;
         const response = await fetch(`https://api.nasa.gov/neo/rest/v1/feed/today?detailed=true&api_key=${apiKey}`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
